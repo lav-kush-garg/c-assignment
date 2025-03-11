@@ -1,13 +1,11 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main() {
-    int a, b;
-    printf("Enter two integers: ");
-    scanf("%d %d", &a, &b);
-
-    if(a == b) {
-        printf("Both numbers are equal.\n");
-    }
-
+    int angle1, angle2, angle3;
+    printf("Enter three angles of a triangle: ");
+    scanf("%d %d %d", &angle1, &angle2, &angle3);
+    if (angle1 + angle2 + angle3 == 180)
+        printf("The angles form a valid triangle\n");
+    else
+        printf("The angles do not form a valid triangle\n");
     return 0;
 }
